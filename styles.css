@@ -9,24 +9,7 @@ body {
     background-color: #f4f4f4;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background: transparent;
-    color: white;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    transition: background 0.3s ease; /* Transición suave */
-    z-index: 100;
-}
 
-nav.scrolled {
-    background: rgba(0, 0, 0, 0.8); /* Fondo negro cuando se hace scroll */
-}
 
 .logo img{
     width: 20%;
@@ -491,4 +474,22 @@ nav ul li a {
     .nav-links.active {
         display: block;
     }
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: transparent;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition: background 0.3s ease; /* Transición suave */
+    z-index: 100;
+}
+
+nav.scrolled {
+    background: rgba(0, 0, 0, 0.8); /* Fondo negro cuando se hace scroll */
 }
