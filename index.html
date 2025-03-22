@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./img/logo.png" type="image/png">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><img src="./img/logo.png" alt="logo"></div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="inicio" class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <div class="contenido">
+                <h1 class="titulo">30+ años de experiencia en <span>Construcción</span> y <span>Obras Civiles</span></h1>
+                <h2 class="subtitulo">Transformamos Ideas en Infraestructuras que Perduran</h2>
+                <p class="parrafo">
+                    Somos líderes en la creación, renovación y rehabilitación de espacios urbanos. Nuestra experiencia en ingeniería y construcción nos permite diseñar proyectos que cumplen con los más altos estándares de calidad. Con nosotros, cada obra se convierte en una inversión sólida para el futuro.
+                </p>
+            </div>
+            <a href="#contacto" class="btn">Contáctanos</a>
+        </div>
+    </section>
+    
+    <section id="nosotros" class="content-section">
+        <h2>Sobre Nosotros</h2>
+        <p>Somos una empresa especializada en la creación de espacios funcionales y modernos.</p>
+    </section>
+    
+    <section id="servicios" class="content-section">
+        <h2>Nuestros Servicios</h2>
+        <p>Diseño de interiores, arquitectura y construcción de espacios innovadores.</p>
+    </section>
+    
+    <section id="contacto" class="content-section">
+        <h2>Contacto</h2>
+        <p>Escríbenos para más información.</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Mi Marca. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Botón flotante de WhatsApp -->
+    <a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank">
+        <img src="./img/whatsapp-icon2.png" alt="WhatsApp">
+    </a>
+
+    <!-- Script de JavaScript para cambiar el fondo del navbar al hacer scroll -->
+    <script>
+        window.onscroll = function() {
+            var navbar = document.querySelector('nav');
+            if (window.pageYOffset > 0) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        };
+    </script>
+</body>
+</html>
